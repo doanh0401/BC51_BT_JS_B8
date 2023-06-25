@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="wrapper">
+            <h1>BT JS Buoi 8</h1>
+            <div class="content">
+                <div class="box">
+                    <div class="row">
+                        <input id="numberInput" type="number" class="col-6">
+                        <div class="col-6"><button>Thêm số</button></div>
+                    </div>
+                    <div id="hienThiMang" class="txt"></div>
+                    <div class="test">
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>1. Tổng số dương</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <button>Tinh tong</button>
+                            <div id="hienThiTong" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>2. Đếm số dương</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <button>Dem so</button>
+                            <div id="hienThiSoSoDuong" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>3.Tìm số nhỏ nhất</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <button>Tim so nho nhat</button>
+                            <div id="hienThiMin" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>4. Tìm số dương nhỏ nhất</h2>
+                            <i class="fa-solid fa-chevron-down" class="txt"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <button>Tim so duong nho nhat</button>
+                            <div id="hienThiMinPos" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>5. Tìm số chẵn cuối cùng</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <button>Tim so chan cuoi cung</button>
+                            <div id="lastEvenNum" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>6. Đổi chỗ</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <input id="firstIndex" type="number">
+                            <input id="secondIndex" type="number">
+                            <button>Doi cho</button>
+                            <div id="SwitchedArr" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>7. Sắp xếp mảng theo thứ tự tăng dần</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <button>Sắp xếp</button>
+                            <div id="sortedArr" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>8. Tìm số nguyên tố đầu tiên</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <button>Tìm số nguyên tố</button>
+                            <div id="primeNum" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>9. Đếm số nguyên</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <input type="number" id="secondInput">
+                            <button>Thêm số</button>
+                            <div id="hienThiMangMoi" class="txt"></div>
+                            <button>Đếm số nguyên</button>
+                            <div id="integer" class="txt"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#/" class="d-flex justify-content-between">
+                            <h2>10. So sánh số lượng số âm và số dương</h2>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div class="menu-level-2">
+                            <button>So sánh</button>
+                            <div id="statement" class="txt"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
